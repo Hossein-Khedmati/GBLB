@@ -5,6 +5,9 @@
   src: url(fonts/OpenSans-Regular.woff);
   src: url(fonts/OpenSans-Regular.woff2);
 }
+*{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -55,7 +58,7 @@ div.menubar {
 ul.menubar {
   width: 500px;
   height: 100%;
-  color: aliceblue;
+  color: #fff;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -64,9 +67,17 @@ ul.menubar {
   font-size: 18px;
   overflow: hidden;
 }
-ul.menubar > li {
+ul.menubar>a{
+  color: #fff;
+  text-decoration: none;
+}
+ul.menubar>a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+ul.menubar  li {
   width: 100px;
-  height: 50%;
+  height: 40px;
   margin-left: 50px;
   display: flex;
   flex-flow: row wrap;
@@ -75,10 +86,10 @@ ul.menubar > li {
   transition: 200ms;
   cursor: pointer;
 }
-ul.menubar > li:nth-child(1) {
+li.home {
   border-bottom: 1px solid #fff;
 }
-ul.menubar > li:hover {
+ul.menubar  li:hover {
   background-color: rgba(37, 37, 37, 0.419);
 }
 div.typo {
@@ -116,11 +127,9 @@ div.hero-section {
   font-size: 42px;
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  top: 50%;
   transform: translateX(-50%);
-  color: #000;
-  font-weight: 700;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to the text */
+  color: #fff;
   text-align: center;
   cursor: default;
   white-space: wrap;
@@ -169,8 +178,17 @@ div.triple-titles {
   justify-content: space-around;
   margin: 20px 0;
 }
+div.triple-titles img {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
 div.triple-titles > span {
   font-size: 22px;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }
 div.service-text{
     width: 90%;
@@ -180,14 +198,34 @@ div.service-text{
 div.service-text>span{
     font-size: 19px;
 }
+button.CTA{
+  width: 60%;
+  height: 50px;
+  background-color: #4352a3;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  margin: 100px auto 0 auto;
+  position: relative;
+  left: 20%;
+  transition: linear 300ms;
+  border: none;
+}
+button.CTA:hover{
+  background-color: #4351a3ec;
+  transform: scale(1.02);
+
+}
 div.main-image{
     width: 100%;
     height: 700px;
     overflow: hidden;
+    margin-top: 100px;
 }
 div.main-image{
     width: inherit;
-    height: 100%;
+    height: 700px;
 }
 div.why-choose {
   width: 100%;
@@ -244,6 +282,19 @@ div.contents>img{
     height: 90px;
     margin-bottom: 20px;
 }
+img.whatsapp{
+  width: 35px;
+  height: 35px;
+  filter: invert(100%);
+  margin-top: 50px;
+  transition: 300ms;
+}
+img.whatsapp:hover{
+  width: 35px;
+  height: 35px;
+  filter: invert(50%);
+  margin-top: 50px;
+}
 div.contents>p.get-services{
     color: #F3F3FB;
     font-size: 25px;
@@ -278,3 +329,4 @@ iframe:hover{
 p.copy-right{
     font-size: 14px;
 }
+
