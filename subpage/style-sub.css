@@ -136,6 +136,7 @@
     margin-top: 25px;
     font-size: 20px;
     line-height: 30px;
+    color: #000000ad;
   }
 .container {
     display: flex;
@@ -196,8 +197,8 @@ div.service-icons{
     margin: 50px 0 100px 0;
 }
 div.service-icons>img{
-    width: 150px;
-    height: 170px;
+    width: 100px;
+    height: 120px;
 }
 div.future{
     background-image: url(../images/backg-sub.jpg);
@@ -219,7 +220,7 @@ div.future{
   /* ***************start footer************ */
   footer {
       background-color: #000000;
-      padding: 40px 150px 0 150px;
+      padding: 40px 150px 30px 150px;
       width: 100%;
       height: 450px;
       overflow: hidden;
@@ -249,35 +250,33 @@ div.future{
       height: 90px;
       margin-bottom: 20px;
   }
+  p.sub-logo{
+    font-size: 18px;
+    margin-top: 8px;
+  }
   img.whatsapp{
     width: 35px;
     height: 35px;
     filter: invert(100%);
-    margin-top: 50px;
+    margin-top: 20px;
     transition: 300ms;
   }
   img.whatsapp:hover{
     width: 35px;
     height: 35px;
     filter: invert(50%);
-    margin-top: 50px;
   }
   div.contents>p.get-services{
-      color: #F3F3FB;
-      font-size: 25px;
+      color: #86898E;
+      font-size: 30px;
       margin: 50px 0 15px 0;
   }
   div.contents>a{
       margin: 10px 0;
-      color: #86898E;
+      color: #f3f3f3;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 18px;
       cursor: pointer;
-  }
-  div.contents>p.services-detail{
-      margin: 10px 0;
-      color: #86898E;
-      font-size: 16px;
   }
   div.contents:nth-last-child(1){
       width: 350px;
