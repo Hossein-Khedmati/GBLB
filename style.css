@@ -47,6 +47,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: Montserrat-r;
 }
 div.navbar {
   width: 100%;
@@ -139,6 +140,7 @@ div.hero-section {
   background-color: brown;
   overflow: hidden;
   position: relative;
+  font-family: Montserrat-r;
 }
 .hero-section > img {
   width: inherit;
@@ -171,9 +173,10 @@ p.title {
 }
 p.text1 {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 30px;
   color: #000000ad;
+  font-family: Montserrat-r;
 }
 div.services-ov {
   width: 100%;
@@ -186,6 +189,7 @@ p.service-title {
   word-spacing: 4px;
   text-align: center;
   margin-bottom: 30px;
+  font-family:Montserrat ;
 }
 div.line {
   width: 98%;
@@ -213,6 +217,7 @@ div.triple-titles > span {
   display: flex;
   flex-flow: row;
   align-items: center;
+  font-family: Montserrat-r;
 }
 div.service-text{
     width: 90%;
@@ -221,7 +226,8 @@ div.service-text{
     color: #000000ad;
 }
 div.service-text>span{
-    font-size: 19px;
+    font-size: 20px;
+    font-family: Montserrat-r;
 }
 button.CTA{
   width: 60%;
@@ -236,6 +242,7 @@ button.CTA{
   left: 20%;
   transition: linear 300ms;
   border: none;
+  font-family: Montserrat;
 }
 button.CTA:hover{
   background-color: #4351a3ec;
@@ -251,6 +258,7 @@ div.main-image{
 div.main-image>img{
   width: 100%;
   height: 800px;
+  object-fit: cover;
 }
 div.why-choose {
   width: 100%;
@@ -263,6 +271,7 @@ p.why-title {
   word-spacing: 4px;
   text-align: center;
   margin-bottom: 30px;
+  font-family: Montserrat;
 }
 div.why-text{
     width: 90%;
@@ -271,7 +280,8 @@ div.why-text{
     color: #000000ad;
 }
 div.why-text>span{
-    font-size: 19px;
+    font-size: 20px;
+    font-family: Montserrat-r;
 }
 
 /* ***************start footer************ */
@@ -308,12 +318,16 @@ div.contents>img{
     height: 90px;
     margin-bottom: 20px;
 }
+p.sub-logo{
+  font-size: 18px;
+  margin-top: 8px;
+  font-family: Montserrat-r;
+}
 img.whatsapp{
   width: 35px;
   height: 35px;
   filter: invert(100%);
   margin-top: 50px;
-  transition: 300ms;
 }
 img.whatsapp:hover{
   width: 35px;
@@ -325,6 +339,7 @@ div.contents>p.get-services{
   color: #86898E;
   font-size: 30px;
   margin: 50px 0 15px 0;
+  font-family: Montserrat;
 }
 div.contents>a{
   margin: 10px 0;
@@ -332,6 +347,7 @@ div.contents>a{
   text-decoration: none;
   font-size: 18px;
   cursor: pointer;
+  font-family: Montserrat-r;
 }
 div.contents>p.services-detail{
     margin: 10px 0;
@@ -354,5 +370,6 @@ iframe:hover{
 }
 p.copy-right{
     font-size: 14px;
+  font-family: Montserrat-r;
 }
 
