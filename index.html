@@ -6,6 +6,10 @@
     <link rel="icon" type="image/x-icon" href="./images/gblg-thumbnail-01.png">
     <link rel="stylesheet" href="style.css" />
     <title>GBLG general trading</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -26,14 +30,15 @@
     </header>
     <!-- hero section -->
     <div class="hero-section" id="hero">
-      <img src="./images/hero.jpg" alt="hero.png" />
+      <img src="./images/hero1.jpg" alt="hero.png" />
       <span class="slogan">
-        Your Trusted Partner in Cosmetic<br> Brokerage and other Investments 
+        Your Trusted Partner in Cosmetic Brokerage and other Investments 
       </span>
     </div>
     <!--end  hero section -->
     <main>
-      <p class="title">Premium Beauty Products, will be customized <br> for you business; by GBLG General Trading LLC</p>
+      <img src="./images/shape-pink.png" alt="pink" class="shape1">
+      <p class="title">Premium Beauty Products, will be customized  for you business;<br>by GBLG General Trading LLC</p>
       <p class="text1">GBLG General Trading LLC is a dynamic and innovative company recently established in Dubai, with a strategic focus on becoming a leading player in the cosmetics and makeup industry. Our core business operations revolve around the import, export, and customization of premium beauty products tailored to meet the specific needs of clients in Dubai and the wider UAE.</p>
       <div class="services-ov">
         <p class="service-title">GBLG's Services Overview</p>
@@ -49,9 +54,25 @@
         <a href="./subpage/subpage.html" target="_self"><button class="CTA" role="button">Explore Our Services...</button></a>
 
       </div>
+      
+      <img src="./images/shape-pink.png" alt="" class="shape2">
     </main>
-    <div class="main-image"><img src="./images/main-image.jpg" alt="main-image.jpg"></div>
+    <!-- <div class="main-image"><img src="./images/main-image.jpg" alt="main-image.jpg"></div> -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/slider1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slider2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slider3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slider4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slider5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/slider6.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <main>
+      <img src="./images/shape-pink.png" alt="" class="shape3">
+      <img src="./images/shape-pink.png" alt="" class="shape4">
       <div class="why-choose">
         <p class="why-title">Why Choose Us?</p>
         <div class="line"></div>
@@ -69,18 +90,20 @@
     <footer>
       <div class="contact-us">
         <div class="contents"><img src="./images/GBLG-logo-full.png" alt="full-logo.png"><p class="sub-logo">GBLG General Trading LLC, established and innovative company in Dubai, specializes in importing, exporting, and customizing premium beauty products to meet the unique needs of the market.</p>
-        <a href="https://wa.me/+971528444035" target="_blank"><img src="./icons/whatsapp.png" alt="whatsapp" class="whatsapp"></a>
+        
         </div>
         <div class="contents">
           <p class="get-services">Get In Touch</p>
           <a href="#map" class="location">Office number 110B, Shaikha Maryam tower, Almaktum Street, Deirah, Dubai</a>
           <a href="tel:+971528444035" class="tel">+971 52 844 4035</a>
           <a href="mailto:Info@gblg.com" class="mail">Info@gblg.com</a>
+          <a href="https://wa.me/+971528444035" target="_blank"><img src="./icons/whatsapp.png" alt="whatsapp" class="whatsapp"></a>
         </div>
         <div class="contents"><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57711.412599956675!2d55.427653649813706!3d25.305437500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bbf5de154dd%3A0xbaf736a45d811bbe!2zU2hlaWtoYSBNYXJ5YW0gQmludCBHaGFuZW0gVG93ZXIgKNio2LHYrCDYp9mE2LTZitiu2Kkg2YXYsdmK2YUg2LrYp9mG2YUp!5e0!3m2!1sfa!2s!4v1730323489759!5m2!1sfa!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p class="copy-right">©2024 GBLG General Trading , All Rights Reserved</p>
         </div>
       </div>
     </footer>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
