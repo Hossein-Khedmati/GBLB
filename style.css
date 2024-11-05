@@ -11,20 +11,12 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aXo.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+
 *{
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -35,6 +27,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f8f8f8;
+  overflow-x: hidden;
 }
 p , span{
     cursor: default;
@@ -136,7 +129,7 @@ div.typo > img:hover {
 /* *****start hero-section****** */
 div.hero-section {
   width: 100%;
-  height: 700px;
+  height: 500px;
   background-color: brown;
   overflow: hidden;
   position: relative;
@@ -148,27 +141,29 @@ div.hero-section {
   object-fit: cover;
 }
 .hero-section > span.slogan {
-  font-size: 42px;
+  font-size:40px;
+  font-family: Montserrat;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: #000000;
+  
   text-align: center;
   cursor: default;
   white-space: wrap;
+  backdrop-filter:blur(4px);
 }
 /* *****end hero-section****** */
 /* start main */
 /* *******start first articles****** */
 main {
   padding: 0 150px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 p.title {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 70px;
-  word-spacing: 4px;
   font-family: Montserrat;
 }
 p.text1 {
@@ -180,11 +175,11 @@ p.text1 {
 }
 div.services-ov {
   width: 100%;
-  height: 400px;
-  margin-top: 100px;
+  height: 430px;
+  margin-top: 50px;
 }
 p.service-title {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 70px;
   word-spacing: 4px;
   text-align: center;
@@ -237,7 +232,7 @@ button.CTA{
   cursor: pointer;
   color: #fff;
   font-size: 20px;
-  margin: 100px auto 0 auto;
+  margin: 60px auto 0 auto;
   position: relative;
   left: 20%;
   transition: linear 300ms;
@@ -251,22 +246,23 @@ button.CTA:hover{
 }
 div.main-image{
     width: 100%;
-    height: 800px;
+    height: 500px;
     overflow: hidden;
     margin-top: 100px;
 }
 div.main-image>img{
   width: 100%;
-  height: 800px;
+  height: 500px;
   object-fit: cover;
 }
 div.why-choose {
   width: 100%;
-  height: 400px;
-  margin-top: 100px;
+  height: 330px;
+  margin-top: 50px;
+  position: relative;
 }
 p.why-title {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 70px;
   word-spacing: 4px;
   text-align: center;
@@ -372,4 +368,72 @@ p.copy-right{
     font-size: 14px;
   font-family: Montserrat-r;
 }
+/*********************** shapes ******************** */
+img.shape1{
+  position: absolute;
+  z-index: -10;
+  width: 700px;
+  height: 600px;
+  filter: blur(30px);
+  right: -250px;
+  top: 350px;
+  animation: slide 4s infinite;
+}
+img.shape2{
+  position: absolute;
+  z-index: -10;
+  width: 700px;
+  height: 600px;
+  filter: blur(30px);
+  left: -250px;
+  top: 1000px;
+  animation: slide 4s infinite;
+}
+img.shape3{
+  position: absolute;
+  z-index: -10;
+  width: 900px;
+  height: 600px;
+  filter: blur(30px);
+  left: -250px;
+}
+@keyframes slide {
+  0%   {scale: 1; }
+  50% {scale: 1.8; }
+  100% { scale: 1;}
+}
+img.shape4{
+  position: absolute;
+  z-index: -10;
+  width: 900px;
+  height: 600px;
+  filter: blur(30px);
+  right: -300px;
+}
 
+
+
+
+
+.swiper {
+  width:80%;
+  height: 550px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
